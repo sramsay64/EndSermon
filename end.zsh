@@ -34,3 +34,6 @@ mkdir -p $FOLDERNAME
 
 # Move the file to it's permanent location
 mv $audioFile $FOLDERNAME
+
+# Give some indication that there was actually success and not failure
+notify-send --icon=/usr/share/icons/elementary/apps/128/checkbox.svg "Sermon finished and is now an mp3 file"
