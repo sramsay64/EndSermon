@@ -7,7 +7,7 @@ cloneAudTemplate() {
 
 YEARSTAMP=$(date '+%Y')
 DATESTAMP=$(date '+%Y-%m-%d-%b')
-TIMESTAMP=$(date '+%I:%M:%S-%p')
+TIMESTAMP=$(date '+%I-%M-%S-%p')
 
 echo "/home/huc/Podcasts/$YEARSTAMP/$DATESTAMP/$TIMESTAMP/"
 mkdir -p "/home/huc/Podcasts/$YEARSTAMP/$DATESTAMP/$TIMESTAMP/"
