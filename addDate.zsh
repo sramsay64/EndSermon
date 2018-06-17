@@ -7,7 +7,13 @@ addDate() {
 	mv "$1" "$(basename -s .pptx $1) $DATESTRING.pptx"
 }
 
-for filename in *.pptx
+unDatedFiles() {
+	ls -1 | grep '.pptx$' | grep -v '20[0-9][0-9]-[0-9][0-9]-[0-9][0-9].pptx$'
+}
+
+unDatedFiles | {
+while read filename
 do
 	addDate $filename
 done
+}
